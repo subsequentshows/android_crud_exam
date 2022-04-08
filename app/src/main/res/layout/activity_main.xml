@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/texttitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter the detail below !"
+        android:textColor="@color/teal_200"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:layout_marginBottom="30dp"/>
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texttitle"
+        android:hint="ID"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/id"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textSize="24dp" />
+
+
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:hint="Quantity"
+        android:inputType="number"
+        android:textSize="24dp" />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:text="Add"
+        android:layout_below="@id/quantity">
+    </Button>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:layout_below="@id/btnInsert">
+    </Button>
+
+    <Button
+        android:id="@+id/btnDetele"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:layout_below="@id/btnUpdate">
+    </Button>
+
+    <Button
+        android:id="@+id/btnView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View"
+        android:textAllCaps="false"
+        android:textSize="24dp"
+        android:layout_below="@id/btnDetele">
+
+    </Button>
+
+</RelativeLayout>
